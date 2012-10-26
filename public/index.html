@@ -1,0 +1,231 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" xmlns:og="http://opengraphprotocol.org/schema/">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="icon"  type="image/png"  href="images/favicon.png" />
+        <link href="css/reset.css" rel="stylesheet" type="text/css" />
+        <link href="css/main.css" rel="stylesheet" type="text/css" />
+        <link href="css/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="javascripts/jquery-1.8.2.min.js"></script>
+        <script type="text/javascript" src="javascripts/jquery.easing-1.3.pack.js?ver=1.3.4"></script>
+        <script type="text/javascript" src="javascripts/jquery.fancybox-1.3.4.pack.js?ver=1.3.4"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#start_trial_submit').mouseover(function () {
+                    $(this).removeClass('submit_btn').addClass('submit_btn_hover');
+                });
+                $('#start_trial_submit').mouseout(function () {
+                    $(this).removeClass('submit_btn_hover').addClass('submit_btn');
+                });
+                $('.modal_video').click(function () {
+                    $.fancybox({
+                        'padding': 10,
+                        'autoScale': false,
+                        'transitionIn': 'none',
+                        'transitionOut': 'none',
+                        'title': this.title,
+                        'width': 640,
+                        'height': 385,
+                        'href': this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'),
+                        'type': 'swf',
+                        'swf': {
+                            'wmode': 'transparent',
+                            'allowfullscreen': 'true'
+                        }
+                    });
+                    return false;
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="logo_container">
+                    <a href="http://www.vorex.com" title="Vorex">
+                        <img id="vorex_logo" src="images/vorex_logo.png" alt="Vorex logo" />
+                    </a>
+                </div>
+                <div id="call_us_today" class="font_gray font_shadow">
+                    <span class="font_20">
+                        Call us today
+                    </span>
+                    <span class="font_30 font_semibold">
+                        888-541-6163
+                    </span>
+                </div>
+            </div>
+            <div id="main_content_container">
+            </div>
+                <div id="main_content">
+                    <div id="free_trial_container">
+                        <div class="clear_35"></div>
+                        <div id="free_trial_box">
+                            <span class="font_18">
+                                Your free 30-Day Trial <br /> offer includes:
+                            </span>
+                            <ul id="free_trial_includes" class="font_12" type="disc">
+                                <li>
+                                    Intuitive PSA Solution, with<br /> 
+                                    Nothing to Download and No <br />Add-Ons
+                                </li>
+                                <li>
+                                    Project, Budget, Time, Expense, <br />
+                                    and Collaboration Tracking
+                                </li>
+                                <li>
+                                    Auto-Generate Invoices and <br />
+                                    Manage Receivables.
+                                </li>
+                                <li>
+                                    Complete Visibility into Your <br />
+                                    Clients, Projects, Employees, <br />
+                                    and Budget 
+                                </li>
+                                <li>
+                                    Risk and Error Free Migration <br />
+                                    & Integration
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="free_trial_video_container">
+                            <!-- DON'T FORGET TO CHANGE VIDEO URL -->
+                            <a class="modal_video" href="http://www.youtube.com/watch?v=qqUtt5iop40?autoplay=1" title="Vorex Interactive vide">
+                                <img src="images/vorex_video.png" alt="Vorex Free Trial Video" />
+                            </a>
+                            <!-- DON'T FORGET TO CHANGE VIDEO URL -->
+                            <a class="modal_video" href="http://www.youtube.com/watch?v=qqUtt5iop40?autoplay=1" title="Watch our interactive video">
+                                <span id="trial_video_desc" class="font_12 font_underline font_white">
+                                    Watch Our Interactive Video <br />
+                                    to Learn More
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="free_trial_form_container">
+                        <div id="free_trial_form_box">
+                            <div id="start_trial_form_title" class="font_24 font_blue">
+                                Start Your Free Trial Today
+                            </div>
+                            <div id="start_trial_form_desc" class="font_12 font_blue">
+                                Manage your projects, create invoices, and unite your pipeline
+                            </div>
+                            <div class="clear_70"></div>
+                            <div id="start_trial_form_content">
+                                <form id="start_trial_frm" name="start_trial_frm" method="post">
+                                    <label class="start_trial_lbl font_blue font_14">First name</label>
+                                    <input type="text" id="first_name_txt" name="first_name" style="margin-left:3px;"/>
+                                    <label class="start_trial_lbl font_blue font_14">Last name</label>
+                                    <input type="text" id="last_name_txt" name="last_name" style="margin-left:3px;"/>
+                                    <label class="start_trial_lbl font_blue font_14">Company</label>
+                                    <input type="text" id="company_txt" name="company" style="margin-left:7px;"/>
+                                    <label class="start_trial_lbl font_blue font_14">Business Email</label>
+                                    <input type="text" id="business_email_txt" name="business_email" style="margin-left:10px;"/>
+                                    <label class="start_trial_lbl font_blue font_14">Business Phone</label>
+                                    <input type="text" id="business_phone_txt" name="business_phone" style="margin-left:4px;"/>
+
+                                    <input id="start_trial_submit" name="start_trial" type="submit" value="" class="submit_btn"/>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="font_gray2 font_12 right" style="margin-right:15px;">
+                            We respect your Privacy
+                        </div>
+                    </div>
+                    <div id="why_choose_vorex">
+                        <span id="why_choose_vorex_title" class="font_28">
+                        Why Choose Vorex PSA to Automate All Your<br /> 
+                        Business Operations?
+                        </span>
+                        <div class="clear_20"></div>
+                        <span class="font_14 line_15">
+                            Because as your all-in-one  Invoicing, Time Tracking, <br />
+                            Project Management  and CRM solution, Vorex PSA<br />
+                            offers simplicity, visibility and control 
+                        </span>
+                        <div class="clear_20"></div>
+                        <span class="font_13 line_15">
+                            From a single intuitively complete interface, Vorex PSA unifies<br />
+                            all your business operations - meaning no more managing<br /> 
+                            multiple databases, spreadsheets and programs. Instead, our<br />
+                            industry exclusive integrated business automation solution<br />
+                            offers: 
+                        </span>
+                        <div class="clear_20"></div>
+                        <ul id="vorex_benefits" class="font_13 line_15">
+                            <li>
+                                <span class="font_bold">Access from anywhere</span>: Direct your projects, manage <br />
+                                your pipeline, access your timesheets and optimize your<br />
+                                approval routes - from anywhere you have internet<br />
+                                access!
+                            </li>
+                            <li>
+                                <span class="font_bold">Unlimited Tasks, Projects, Timesheets, Contacts <br />
+                                and Leads</span>: There is no limit to the  projects, tasks,<br /> 
+                                opportunities and contacts that you can create and<br />
+                                manage
+                            </li>
+                            <li>
+                                <span class="font_bold">Intuitive PSA Solution</span>:Designed by business <br />
+                                professionals for business professionals - Vorex PSA<br />
+                                offers a new level of comprehensive simplicity
+                            </li>
+                            <li>
+                                <span class="font_bold">Integrated CRM</span>: Our industry exclusive CRM solution is <br />
+                                integrated across all your business operations - leading <br />
+                                to accurate quotes and increased revenue
+
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="main_content_footer"></div>
+                    <div id="additional_info">
+                        <div id="start_experiencing">
+                            <span class="font_14 font_black">
+                                With nothing to download, and no credit card <br />
+                                required, there's no risk to you. <span class="font_bold">So start your Free Trial<br />
+                                today</span>, and start experiencing what Vorex PSA can <br />
+                                bring to your business.
+                            </span>
+                            <div class="clear_20"></div>
+                            <span class="font_16 font_blue">
+                                FILL OUT  THE FORM ABOVE TO GET STARTED
+                            </span>
+                        </div>
+                    </div>
+                    <div class="vertical_line"></div>
+                    <div id="testimonial">
+                        <div id="quotation_up" class="quotation_mark"></div>
+                        <div id="testimonial_content" class="font_blue2">
+                            <span class="font_18">Testimonial</span>
+                            <br /><br />
+                            <span class="font_14">
+                            I strongly recommend this solution to<br />
+                            any business owner. It is easy, powerful,<br />
+                            and backed by excellent support.
+                            </span>
+                            <br /><br />
+                            <span class="font_14">DAR Telecom</span>
+                        </div>
+                        <div id="quotation_down" class="quotation_mark"></div>
+                    </div>
+                </div>
+            
+            <div class="clear_40"></div>
+            <div id="footer">
+                <a href="http://www.vorex.com" title="Vorex">
+                    <img src="images/vorex_logo_small.png" alt="Vorex logo" style="float:left;"/>
+                </a>
+                <div id="privacy_policy" class="font_16 left"><a href="#" title="Vorex Privacy Policy" class="font_black">© 2012 | Privacy Policy</a></div>
+                <div id="call_us_today_footer" class="font_blue3" style="margin-top:0px;">
+                    <span class="font_20">
+                        Call us today
+                    </span>
+                    <span class="font_30 font_semibold">
+                        888-541-6163
+                    </span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

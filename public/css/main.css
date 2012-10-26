@@ -1,0 +1,390 @@
+﻿body
+{
+    background: url('../images/bg.png') repeat-x;
+    width:100%;
+    height:100%;
+    font-family:Myriad Pro, Trebuchet MS, Verdana;
+    color:#FFFFFF;
+    overflow-x:hidden;
+}
+a
+{
+    text-decoration:none;
+    color:#FFFFFF;
+}
+.font_shadow
+{
+    text-shadow: 1px 1px #545353;
+}
+.font_underline
+{
+    text-decoration:underline;
+}
+.font_semibold
+{
+    font-weight:200;
+}
+.font_bold
+{
+    font-weight:bold;
+}
+.font_white
+{
+    color:#FFFFFF;
+}
+.font_black
+{
+    color:#000000;
+}
+.font_gray
+{
+    color:#d6dadc;
+}
+.font_gray2
+{
+    color:#dedede;
+}
+.font_blue
+{
+    color:#1970a1;
+}
+.font_blue2
+{
+    color:#5f8090;
+}
+.font_blue3
+{
+    color:#95afbc;
+}
+.font_12
+{
+    font-size:12px;
+}
+.font_13
+{
+    font-size:13px;
+}
+.font_14
+{
+    font-size:14px;
+}
+.font_16
+{
+    font-size:16px;
+}
+.font_18
+{
+    font-size:18px;
+}
+.font_30
+{
+    font-size:30px;
+}
+.font_20
+{
+    font-size:20px;
+}
+.font_24
+{
+    font-size:24px;
+}
+.font_28
+{
+    font-size:28px;
+}
+.line_15
+{
+    line-height:15px;
+}
+.clear_15
+{
+    clear:both;
+    height:15px;
+}
+.clear_20
+{
+    clear:both;
+    height:20px;
+}
+.clear_35
+{
+    clear:both;
+    height:35px;
+}
+.clear_40
+{
+    clear:both;
+    height:40px;
+}
+.clear_70
+{
+    clear:both;
+    height:70px;
+}
+.right
+{
+    float:right;
+}
+.left
+{
+    float:left;
+}
+.container
+{
+    width:990px;
+    height:auto;
+    margin:0 auto;
+}
+.header
+{
+    width:100%;
+    height:84px;
+}
+
+.logo_container
+{
+    height:83px;
+    width:410px;
+    float:left;
+    margin-left:-60px;
+    background: url('../images/logo_bg.png') no-repeat;
+}
+
+#vorex_logo
+{
+    width:186px;
+    height:60px;
+    margin-left:100px;
+    margin-top:10px;
+}
+
+#call_us_today, #call_us_today_footer
+{
+    float:right;
+    margin-top:15px;
+}
+#main_content_container
+{
+    width:1170px;
+    height:580px;
+    position:absolute;
+    overflow:hidden;
+    margin:0 auto;
+    background: url('../images/main_content_shadow.png') no-repeat;
+}
+#main_content
+{
+    width:984px;
+    height:auto;
+    position:relative;
+}
+#free_trial_container
+{
+    float:left;
+    height:100%;
+    width:320px;
+}
+#free_trial_box
+{
+    width:100%;
+    height:360px;
+    background: url('../images/free_trial_shadow.png') repeat-x;
+    padding:25px 0px 0px 10px;
+}
+#free_trial_includes
+{
+    margin-left:36px;
+}
+
+ul#free_trial_includes li
+{
+    line-height:15px;
+    padding-top:10px;
+    list-style:disc;
+}
+#free_trial_video_container
+{
+    margin-left:10px;
+    width:166px;
+    height:96px;
+    position:relative;
+    top:-35px;
+}
+
+#trial_video_desc
+{
+    display:block;
+    margin-top:5px;
+}
+
+#free_trial_form_container
+{
+    float:left;
+    width:382px;
+    height:100%;
+    margin-left:-80px;
+    margin-top:-15px;
+}
+#free_trial_form_box
+{
+    background:url('../images/free_trial_form.png') no-repeat;
+    width:100%;
+    height:484px;
+}
+#start_trial_form_title
+{
+    width:290px;
+    margin:0 auto;
+    padding-top:15px;
+}
+#start_trial_form_desc
+{
+    width:340px;
+    margin:0 auto;
+    padding-top:5px;
+}
+
+#start_trial_form_content
+{
+    width:335px;
+    margin-left:30px;
+}
+#first_name_txt, #last_name_txt, #company_txt
+{
+    width:237px;
+}
+#business_email_txt, #business_phone_txt
+{
+    width:205px;
+}
+
+#start_trial_frm input
+{
+    margin-bottom:20px;
+    display:block;
+    float:left;
+    border-left:1px solid #dedede;
+    border-top:1px solid #dedede;
+    border-bottom:1px solid #c4c4c4;
+    border-right:1px solid #c4c4c4;
+    height:14px;
+    padding:3px;
+}
+#start_trial_frm label
+{
+    display:block;
+    float:left;
+    margin-top:5px;
+}
+
+#start_trial_submit
+{
+    width:397px;
+    height:93px !important;
+    border:none !important;
+    outline: 0 !important;
+    outline-style:none !important;
+    outline-width:0 !important;
+    position:relative;
+    top:22px;
+    left:-42px;
+    cursor:pointer;
+}
+.submit_btn
+{
+    background:url('../images/get_free_trial_btn_1.png');
+}
+.submit_btn_hover
+{
+    background:url('../images/get_free_trial_btn_2.png');
+}
+#why_choose_vorex
+{
+    position:relative;
+    float:left;
+    padding-top:25px;
+    padding-left:12px;
+    width:350px;
+}
+#vorex_benefits
+{
+    padding-left:15px;
+}
+#vorex_benefits li
+{
+    margin-left:15px;
+    list-style:disc;
+    margin-bottom:20px;
+}
+#main_content_footer
+{
+    clear:both;
+    width:718px;
+    height:25px;
+    margin:0 auto;
+    background:url('../images/main_content_footer.png') no-repeat;
+}
+
+#additional_info
+{
+    width:425px;
+    float:left;
+    padding:65px 0px 65px 65px;
+    height:90px;
+}
+#testimonial
+{
+    width:380px;
+    height:145px;
+    float:left;
+    position:relative;
+    margin-top:30px;
+}
+#quotation_up
+{
+    background:url('../images/quotations_up.png') no-repeat;
+    top:0px;
+    left:0px;
+}
+#quotation_down
+{
+    background:url('../images/quotations_up.png') no-repeat;
+    right:0px;
+    bottom:0px;
+}
+.quotation_mark
+{
+    height:100%;
+    position:absolute;
+    width:58px;
+    height:44px;
+    float:left;
+}
+#testimonial_content
+{
+    position:absolute;
+    top:35px;
+    left:75px;
+}
+#footer
+{
+    width:984px;
+    height:25px;
+    padding:25px 0px;
+    margin:0 auto;
+}
+#privacy_policy
+{
+    font-family:Arial;
+    margin-top:7px;
+    margin-left:10px;
+}
+.vertical_line
+{
+    width:1px;
+    height:200px;
+    background-color:#95afbc;
+    float:left;
+    margin-top:30px;
+    margin-right:75px;
+}
